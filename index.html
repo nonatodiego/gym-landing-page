@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <title>MarombeX021</title>
+</head>
+<body>
+
+  <a href="#main" class="skip-to-content">Skip to content</a>
+
+  <header class="header">
+    <div class="container">
+      <h1 class="header__logo">
+        <span class="sr-only">MarombeX021</span>
+        <a href="/" aria-label="MarombeX021 logo">
+          <img src="img/logo.png" alt="MarombeX021" width="200">
+        </a>
+      </h1>
+      
+      <div class="header__menu">
+        <!-- Mobile Navigation Start -->
+        <button class="button" id="mobileMenuBtn" aria-label="Toggle Menu" aria-expanded = "false" aria-controls="mobileMenu">
+          <img src="img/menu.svg" alt="Mobile Menu" width="16" height="11">
+        </button>
+        <!-- Mobile Navigation End-->
+        
+      <!-- Desktop Navigation Start -->
+        <nav class="desktop-menu">
+          <h1 class="sr-only">Main Navigation</h1>
+          <ul>
+            <li><a href="#" class="desktop-menu__link active">Home</a></li>
+            <li><a href="#" class="desktop-menu__link">About</a></li>
+            <li><a href="#" class="desktop-menu__link">Shop</a></li>
+            <li><a href="#" class="desktop-menu__link">Contact</a></li>
+          </ul>
+        </nav>
+      <!-- Desktop Navigation End -->
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Start -->
+  <nav class="mobile-menu " id="mobileMenu">
+    <h1 class="sr-only">Main Navigation</h1>
+    <button class="button mobile-nav-close"></button>
+    <ul>
+      <li><a href="#" class="mobile-menu__link">Home</a></li>
+      <li><a href="#" class="mobile-menu__link">About</a></li>
+      <li><a href="#" class="mobile-menu__link">Shop</a></li>
+      <li><a href="#" class="mobile-menu__link">Gallery</a></li>
+      <li><a href="#" class="mobile-menu__link">Contact</a></li>
+    </ul>
+  </nav>
+  <!-- Mobile Navigation End -->
+
+  <!-- Hero Start -->
+  <main>
+    <section class="hero">
+      <div class="hero__image">
+        <img src="img/hero.jpg" alt="stay strong" loading="lazy" width="1920" height="1074">
+      </div>
+
+      <div class="container hero__container">
+        <div class="hero-wrapper">
+          <h1 class="hero-wrapper__heading">No pain no gain!<br> <span>Just do it</span>!</h1>
+          <p class="hero-wrapper__body">
+            Define your limits & your lifestyle
+          </p>
+          <a href="#" class="button button--primary" aria-label="find out more">Find out More</a>
+
+        </div>
+
+        <a href="#scrolldown" class="hero__scrollbtn">
+          SEE MORE <img src="img/arrow-down.svg" alt="scrolldown" width="24" height="15" loading="lazy"/>
+        </a>
+      </div>
+    </section>
+  </main>
+  <!-- Hero End -->
+
+  <section class="category pt-1" id="#scrolldown">
+    
+
+  </section>
+
+
+
+
+
+  <script src="js/script.js"></script>
+</body>
+</html>
