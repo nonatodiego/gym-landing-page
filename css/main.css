@@ -475,4 +475,120 @@ p {
   max-width: 810px;
   margin: 0 auto;
 }
+
+.get-started {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.get-started::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 140px;
+  background: #000;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, black), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(180deg, black 10%, rgba(0, 0, 0, 0) 100%);
+  width: 100%;
+}
+
+.get-started::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 140px;
+  background: #000;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, black), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(0deg, black 10%, rgba(0, 0, 0, 0) 100%);
+  width: 100%;
+}
+
+.get-started .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.6;
+}
+
+.get-started .container {
+  text-align: center;
+  z-index: 1;
+}
+
+.get-started-img1 {
+  background-image: url(../img/getstarted.jpg);
+}
+
+.get-started-img1 .overlay {
+  background: -webkit-gradient(linear, left top, left bottom, from(#000), color-stop(70%, #0d06c9));
+  background: linear-gradient(#000 0%, #0d06c9 70%);
+}
+
+.get-started-img2 {
+  background-image: url(../img/help.jpg);
+}
+
+.get-started-img2 .overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.footer__copyright {
+  margin-bottom: 20px;
+}
+
+.footer-container {
+  display: -ms-grid;
+  display: grid;
+  gap: 10;
+}
+
+@media screen and (min-width: 600px) {
+  .footer-container {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .footer-container {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.footer-col__heading {
+  font-size: 1.8rem;
+}
+
+.footer-col__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.footer-col__list li {
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+
+.footer-col__list a {
+  padding: 8px 0;
+  display: block;
+}
 /*# sourceMappingURL=main.css.map */

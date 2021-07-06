@@ -1,188 +1,313 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/main.css">
-  <title>MarombeX021</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>MarombeX021</title>
+  </head>
+  <body>
+    <a href="#main" class="skip-to-content">Skip to content</a>
 
-  <a href="#main" class="skip-to-content">Skip to content</a>
+    <header class="header">
+      <div class="container">
+        <h1 class="header__logo">
+          <span class="sr-only">MarombeX021</span>
+          <a href="/" aria-label="MarombeX021 logo">
+            <img src="img/logo.png" alt="MarombeX021" width="200" />
+          </a>
+        </h1>
 
-  <header class="header">
-    <div class="container">
-      <h1 class="header__logo">
-        <span class="sr-only">MarombeX021</span>
-        <a href="/" aria-label="MarombeX021 logo">
-          <img src="img/logo.png" alt="MarombeX021" width="200">
-        </a>
-      </h1>
-      
-      <div class="header__menu">
-        <!-- Mobile Navigation Start -->
-        <button class="button" id="mobileMenuBtn" aria-label="Toggle Menu" aria-expanded = "false" aria-controls="mobileMenu">
-          <img src="img/menu.svg" alt="Mobile Menu" width="16" height="11">
-        </button>
-        <!-- Mobile Navigation End-->
-        
-      <!-- Desktop Navigation Start -->
-        <nav class="desktop-menu">
-          <h1 class="sr-only">Main Navigation</h1>
-          <ul>
-            <li><a href="#" class="desktop-menu__link active">Home</a></li>
-            <li><a href="#" class="desktop-menu__link">About</a></li>
-            <li><a href="#" class="desktop-menu__link">Shop</a></li>
-            <li><a href="#" class="desktop-menu__link">Contact</a></li>
+        <div class="header__menu">
+          <!-- Mobile Navigation Start -->
+          <button
+            class="button"
+            id="mobileMenuBtn"
+            aria-label="Toggle Menu"
+            aria-expanded="false"
+            aria-controls="mobileMenu"
+          >
+            <img src="img/menu.svg" alt="Mobile Menu" width="16" height="11" />
+          </button>
+          <!-- Mobile Navigation End-->
+
+          <!-- Desktop Navigation Start -->
+          <nav class="desktop-menu">
+            <h1 class="sr-only">Main Navigation</h1>
+            <ul>
+              <li><a href="#" class="desktop-menu__link active">Home</a></li>
+              <li><a href="#" class="desktop-menu__link">About</a></li>
+              <li><a href="#" class="desktop-menu__link">Shop</a></li>
+              <li><a href="#" class="desktop-menu__link">Contact</a></li>
+            </ul>
+          </nav>
+          <!-- Desktop Navigation End -->
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Navigation Start -->
+    <nav class="mobile-menu" id="mobileMenu">
+      <h1 class="sr-only">Main Navigation</h1>
+      <button class="button mobile-nav-close"></button>
+      <ul>
+        <li><a href="#" class="mobile-menu__link">Home</a></li>
+        <li><a href="#" class="mobile-menu__link">About</a></li>
+        <li><a href="#" class="mobile-menu__link">Shop</a></li>
+        <li><a href="#" class="mobile-menu__link">Gallery</a></li>
+        <li><a href="#" class="mobile-menu__link">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- Mobile Navigation End -->
+
+    <!-- Hero Start -->
+    <main>
+      <section class="hero">
+        <div class="hero__image">
+          <img
+            src="img/hero.jpg"
+            alt="stay strong"
+            loading="lazy"
+            width="1920"
+            height="1074"
+          />
+        </div>
+
+        <div class="container hero__container">
+          <div class="hero-wrapper" id="main">
+            <h1 class="hero-wrapper__heading">
+              Welcome to the <br /><span> best.</span>
+            </h1>
+            <p class="hero-wrapper__body pt-1">
+              You have to think it before you can do it.
+            </p>
+            <a
+              href="#"
+              class="button button--primary"
+              aria-label="find out more"
+              >Find out More</a
+            >
+          </div>
+
+          <a href="#scrolldown" class="hero__scrollbtn">
+            SEE MORE
+            <img
+              src="img/arrow-down.svg"
+              alt="scrolldown"
+              width="24"
+              height="15"
+              loading="lazy"
+            />
+          </a>
+        </div>
+      </section>
+      <!-- Hero End -->
+
+      <!-- Categories Start -->
+      <section class="categories pt-1" id="scrolldown">
+        <h1 class="sr-only">MarombeX021</h1>
+
+        <div class="container training">
+          <a href="#" class="training__card training__card--square">
+            <h3 class="training__card-title">Expert Coaching</h3>
+            <div class="image-overlay"></div>
+            <div class="training__image">
+              <img
+                src="img/expert-coaching.jpg"
+                width="536"
+                height="559"
+                loading="lazy"
+                alt="Our Expert Coaching"
+              />
+            </div>
+          </a>
+
+          <a href="#" class="training__card training__card--square">
+            <h3 class="training__card-title">Nutrition</h3>
+            <div class="image-overlay"></div>
+            <div class="training__image">
+              <img
+                src="img/nutrition.jpg"
+                width="536"
+                height="559"
+                loading="lazy"
+                alt="Nutrition"
+              />
+            </div>
+          </a>
+
+          <a href="#" class="training__card training__card--square">
+            <h3 class="training__card-title">Support</h3>
+            <div class="image-overlay"></div>
+            <div class="training__image">
+              <img
+                src="img/support.jpg"
+                width="536"
+                height="559"
+                loading="lazy"
+                alt="Support"
+              />
+            </div>
+          </a>
+        </div>
+      </section>
+      <!-- Categories End -->
+
+      <!-- Get Started Start -->
+      <section class="get-started get-started-img1 mt-1">
+        <div class="overlay"></div>
+        <div class="container">
+          <h1 class="text-center">
+            Get Started Today<br /><span>Why Wait?</span>
+          </h1>
+          <a href="#" class="button button--primary">Sign Up</a>
+        </div>
+      </section>
+      <!-- Get Started End -->
+
+      <!-- Training Options Start -->
+      <section class="training-options pt-1">
+        <div class="container">
+          <h1 class="training-options__heading">
+            Your Training <span> Options</span>
+          </h1>
+          <p class="training-options__body">
+            Defy your limits and pursue your fitnesse golas with a complimentary
+            all-acess gym pass! Try our wide-variety of classes, train with
+            world-class coaches, and acess the equipment you need. Availbe at
+            participating locaiton. Offers vary by location. Terms and
+            conditions may apply
+          </p>
+
+          <div class="training training--option pt-1 text-center">
+            <a href="#" class="training__card training__card--end">
+              <h3 class="training__card-title">Small Group PT</h3>
+              <p class="training__card-body">
+                Expect the unexpected in our signature high-intensity interval
+                training class. Cycle through timed interval stations designed
+                to consistently shock your system and deliver results
+              </p>
+              <div class="image-overlay"></div>
+              <div class="training__image">
+                <img
+                  src="img/smallgroup.jpg"
+                  width="536"
+                  height="559"
+                  loading="lazy"
+                  alt="Small Group PT"
+                />
+              </div>
+            </a>
+
+            <a href="#" class="training__card training__card--end">
+              <h3 class="training__card-title">Classes</h3>
+              <p class="training__card-body">
+                Developed strength, conditiong, and flexbility with our
+                MarombeX021. Insipered classes around the world. These efficient
+                classes, effective, total-body workouts can be done at home with
+                minal equipament
+              </p>
+              <div class="image-overlay"></div>
+              <div class="training__image">
+                <img
+                  src="img/classes.jpg"
+                  alt="Classes"
+                  width="536"
+                  height="559"
+                  loading="lazy"
+                  alt="Nutrition"
+                />
+              </div>
+            </a>
+
+            <a href="#" class="training__card training__card--end">
+              <h3 class="training__card-title">One to One</h3>
+              <p class="training__card-body">
+                Receive expert advice, a personalized, plan, and 1-on-1
+                real-time attention with online personal training. Regardless of
+                goal or athletic ability, we have a coach for you. Equipment not
+                necessary
+              </p>
+              <div class="image-overlay"></div>
+              <div class="training__image">
+                <img
+                  src="img/onetoone.jpg"
+                  width="536"
+                  height="559"
+                  loading="lazy"
+                  alt="Support"
+                />
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- Training Option End -->
+
+      <!-- Get Started Start -->
+      <section class="get-started get-started-img2 mt-1">
+        <div class="overlay"></div>
+        <div class="container">
+          <h1 class="text-center">
+            WE WILL HEL YOU GET IN<br />
+            THE SHAPE OF YOUR LIFE <span>LET'S GET STARTED</span>
+          </h1>
+          <a href="#" class="button button--primary">Sign Up</a>
+        </div>
+      </section>
+      <!-- Get Started End -->
+    </main>
+
+    <footer class="footer pt-1">
+      <div class="container footer-container">
+        <div class="footer-col">
+          <h3 class="footer-col__heading">Find Us</h3>
+          <ul class="footer-col__list">
+            <li>Address: <a href="#">834 Los Angupes | TX</a></li>
+            <li>Contact <a href="#">+5540028922</a></li>
           </ul>
-        </nav>
-      <!-- Desktop Navigation End -->
-      </div>
-    </div>
-  </header>
-
-  <!-- Mobile Navigation Start -->
-  <nav class="mobile-menu " id="mobileMenu">
-    <h1 class="sr-only">Main Navigation</h1>
-    <button class="button mobile-nav-close"></button>
-    <ul>
-      <li><a href="#" class="mobile-menu__link">Home</a></li>
-      <li><a href="#" class="mobile-menu__link">About</a></li>
-      <li><a href="#" class="mobile-menu__link">Shop</a></li>
-      <li><a href="#" class="mobile-menu__link">Gallery</a></li>
-      <li><a href="#" class="mobile-menu__link">Contact</a></li>
-    </ul>
-  </nav>
-  <!-- Mobile Navigation End -->
-
-  <!-- Hero Start -->
-  <main>
-    <section class="hero">
-      <div class="hero__image">
-        <img src="img/hero.jpg" alt="stay strong" loading="lazy" width="1920" height="1074">
-      </div>
-
-      <div class="container hero__container">
-        <div class="hero-wrapper" id="main">
-          <h1 class="hero-wrapper__heading">Welcome to the  <br><span> best.</span></h1>
-          <p class="hero-wrapper__body pt-1">
-            You have to think it before you can do it. 
-          </p>
-          <a href="#" class="button button--primary" aria-label="find out more">Find out More</a>
-
         </div>
-
-        <a href="#scrolldown" class="hero__scrollbtn">
-          SEE MORE <img src="img/arrow-down.svg" alt="scrolldown" width="24" height="15" loading="lazy"/>
-        </a>
+        <div class="footer-col">
+          <h3 class="footer-col__heading">Get Assistance</h3>
+          <ul class="footer-col__list">
+            <li><a href="#">Link: </a></li>
+            <li><a href="#">Link: </a></li>
+            <li><a href="#">Link: </a></li>
+            <li><a href="#">Link: </a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-col__heading">Company</h3>
+          <ul class="footer-col__list">
+            <li><a href="#">Link: </a></li>
+            <li><a href="#">Link: </a></li>
+            <li><a href="#">Link: </a></li>
+            <li><a href="#">Link: </a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-col__heading">Keep In Touch</h3>
+          <ul class="footer-col__list">
+            <li><a href="#">Link: </a></li>
+            <li><a href="#">Link: </a></li>
+            <li><a href="#">Link: </a></li>
+            <li><a href="#">Link: </a></li>
+          </ul>
+        </div>
       </div>
-    </section>
-  </main>
-  <!-- Hero End -->
 
-  <!-- Categories Start -->
-  <section class="categories pt-1" id="scrolldown">
-    <h1 class="sr-only">MarombeX021</h1>
-
-    <div class="container training">
-
-      <a href="#" class="training__card training__card--square">
-        <h3 class="training__card-title">Expert Coaching</h3>
-        <div class="image-overlay"></div>
-        <div class="training__image">
-          <img src="img/expert-coaching.jpg" width="536" height="559" loading="lazy" alt="Our Expert Coaching">
-        </div>
-      </a>
-
-      <a href="#" class="training__card training__card--square">
-        <h3 class="training__card-title">Nutrition</h3>
-        <div class="image-overlay"></div>
-        <div class="training__image">
-          <img src="img/nutrition.jpg" width="536" height="559" loading="lazy" alt="Nutrition">
-        </div>
-      </a>
-
-      <a href="#" class="training__card training__card--square">
-        <h3 class="training__card-title">Support</h3>
-        <div class="image-overlay"></div>
-        <div class="training__image">
-          <img src="img/support.jpg" width="536" height="559" loading="lazy" alt="Support">
-        </div>
-      </a>
-
-    </div>
-
-  </section>  
-  <!-- Categories End -->
-  
-  <!-- Get Started Start -->
-  <section class="get-started get-started-img1 mt-1">
-    <div class="overlay"></div>
-    <div class="container">
-      <h1 class="text-center">Get Started Today<br><span>Why Wait?</span></h1> 
-      <a href="#" class="button button--primary">Sign Up</a>
-    </div>
-  </section>
-  <!-- Get Started End -->
-
-
-
-  <!-- Training Options Start -->
-  <section class="training-options pt-1">
-    <div class="container">
-      <h1 class="training-options__heading">Your Training <span> Options</span></h1>
-      <p class="training-options__body">Defy your limits and pursue your fitnesse golas with a complimentary all-acess gym pass! Try our wide-variety of classes, train with world-class coaches, and acess the equipment you need. Availbe at participating locaiton. Offers vary by location. Terms and conditions may apply</p>
-
-      <div class="training training--option pt-1 text-center">
-
-        <a href="#" class="training__card training__card--end">
-          <h3 class="training__card-title">Small Group PT</h3>
-          <p class="training__card-body">
-            Expect the unexpected in our signature high-intensity interval training class. Cycle through timed interval stations designed to consistently shock your system and deliver results            
-          </p>
-          <div class="image-overlay"></div>
-          <div class="training__image">
-            <img src="img/smallgroup.jpg" width="536" height="559" loading="lazy" alt="Small Group PT">
-          </div>
-        </a>
-
-        <a href="#" class="training__card training__card--end">
-          <h3 class="training__card-title">Classes</h3>
-          <p class="training__card-body">
-            Developed strength, conditiong, and flexbility with our MarombeX021. Insipered classes around the world. These efficient classes, effective, total-body workouts can be done at home with minal equipament       
-          </p>
-          <div class="image-overlay"></div>
-          <div class="training__image">
-            <img src="img/classes.jpg" alt="Classes" width="536" height="559" loading="lazy" alt="Nutrition">
-          </div>
-        </a>
-
-        <a href="#" class="training__card training__card--end">
-          <h3 class="training__card-title">One to One</h3>
-          <p class="training__card-body">
-            Receive expert advice, a personalized, plan, and 1-on-1 real-time attention with online personal training. Regardless of goal or athletic ability, we have a coach for you. Equipment not necessary         
-          </p>
-          <div class="image-overlay"></div>
-          <div class="training__image">
-            <img src="img/onetoone.jpg" width="536" height="559" loading="lazy" alt="Support">
-          </div>
-        </a>
-
+      <div class="container text-center footer__copyright">
+        <p class="pt-1">&copy; 2021 MarombeX021  created by 🚀<a href="github.com/nonatodiego">Diego Nonato</a></p>
       </div>
-    </div>
+    </footer>
 
-  </section>
-  <!-- Training Option End -->
-
- 
-
-
-
-
-  <script src="js/script.js"></script>
-</body>
+    <script src="js/script.js"></script>
+  </body>
 </html>
